@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
+    <string name="app_name">Aplicacion</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="email_login">Email</string>
+    <string name="pass_login">Contraseña</string>
+    <string name="button_login">Ingresar</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
 </resources>
