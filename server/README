@@ -20,3 +20,4 @@ Se van a tomar unos cuantos termos de mate porque tarda muuucho en bajar todas l
 	Name: Server
 
 6.- Darle Play!
+	Deberían ver el json {"content":"Hola mundo!!! :D"} si le pegan a http://localhost:9000 desde el browser.
