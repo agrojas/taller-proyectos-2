@@ -16,7 +16,8 @@ public class MenuPrincipal extends Activity {
 
     DrawerLayout drawerLayout;
     ListView listView;
-    String[] opciones = { "Opción 1", "Opción 2", "Opción 3", "Opción 4" };
+    String[] opciones = { "Publicar Mascota en Adopción", "Buscar Mascota para adoptar",
+                            "Perdi una Mascota", "Encontré una Mascota." };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
