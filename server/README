@@ -1,0 +1,22 @@
+
+1.- Tener instalado el JDK 7.
+
+2.- Instalar Intellij IDEA Ultimate 14.04 (yo no me bajaría la última versión porque la probé en el trabajo y tiene ciertas cosas que no están buenas):
+	https://confluence.jetbrains.com/display/IntelliJIDEA/Previous+IntelliJ+IDEA+Releases
+
+License key:
+		ychon
+		11298-D4XZY-Y97M4-D6QNW-TW3K2-91IQ7
+
+3.- Para bajarse el plugin de Play: File -> Settings... -> Plugins e instalan el de Scala, porque ahora viene Play dentro del plugin de Scala.
+
+4.- Para abrir el proyecto: Open (Seleccionan la carpeta server)
+
+Seleccionen: use auto-import y download source and docs
+
+Se van a tomar unos cuantos termos de mate porque tarda muuucho en bajar todas las dependencias...
+
+5.- Para correrlo agregan la configuración en Run: Run -> Edit Configurations -> "+" -> Play 2 App:
+	Name: Server
+
+6.- Darle Play!
