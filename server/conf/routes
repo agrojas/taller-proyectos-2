@@ -3,4 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                           @controllers.LogInController.index
+GET         /                @controllers.LogInController.index
+
+GET         /usuarios        @controllers.LogInController.traerTodosLosUsuarios
+POST        /usuario         @controllers.LogInController.agregarUsuario

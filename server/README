@@ -21,3 +21,85 @@ Se van a tomar unos cuantos termos de mate porque tarda muuucho en bajar todas l
 
 6.- Darle Play!
 	Deberían ver el json {"content":"Hola mundo!!! :D"} si le pegan a http://localhost:9000 desde el browser.
+
+
+
+
+Instalación de MongoDB
+======================
+
+1.- sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+
+2.- Para Ubuntu 14.04: echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+
+    Para Ubuntu 12.04: echo "deb http://repo.mongodb.org/apt/ubuntu precise/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+
+3.- sudo apt-get update
+
+4.- sudo apt-get install -y mongodb-org
+
+
+
+Para prender la base
+--------------------
+	sudo service mongod start
+
+Para apagar la base
+-------------------
+	sudo service mongod stop
+
+Para entrar al shell de la base
+-------------------------------
+	mongo
+
+Para hacer un backup de la base
+-------------------------------
+	mongodump --out ./mongo/ --db prueba   # Si estás parado en la raiz del repo
+
+Para restaurar el backup de la base
+-----------------------------------
+	mongorestore prueba/   # Estando parados en la carpeta mongo del repo
+	
+
+
+
+Comandos útiles dentro del shell de MongoDB
+===========================================
+
+1.- Entrar a una base de datos: use <nombre de base de datos>
+	Para mostrar las que hay: show databases
+2.- Una vez dentro de una base de datos, para mostrar las colecciones que tiene: show collections
+
+Para hacer queries: db.<nombre de la colección>.<lo que quieras hacer>
+
+
+Ejemplos:
+
+db.usuarios.findOne() ---> Trae un usuario cualquiera
+
+db.usuarios.find({nombre: "Yamila"}) ---> Trae los usuarios con nombre Yamila
+
+
+
+
+Probar grabar un usuario en el proyecto
+=======================================
+
+1.- Instalarse el plugin RESTClient en el browser (está tanto para Firefox como Chrome). Va a servir para probar todos los POSTs.
+
+En Headers agregar:
+	Name: Content-Type
+	Value: application/json
+Siempre pegarle con este header porque si no no sabe qué tipo de dato viene.
+
+Method: POST
+
+URL: http://localhost:9000/usuario
+
+Body:
+{
+"nombre": "Yamila"
+}
+
+
+

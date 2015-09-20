@@ -13,5 +13,6 @@ libraryDependencies ++= Seq(
   "org.springframework" % "spring-tx" % "4.1.1.RELEASE",
   "org.springframework" % "spring-expression" % "4.1.1.RELEASE",
   "org.springframework" % "spring-aop" % "4.1.1.RELEASE",
-  "org.springframework" % "spring-test" % "4.1.1.RELEASE" % "test"
+  "org.springframework" % "spring-test" % "4.1.1.RELEASE" % "test",
+  "net.vz.mongodb.jackson" % "play-mongo-jackson-mapper_2.10" % "1.1.0"
 )
