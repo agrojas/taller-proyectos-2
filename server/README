@@ -54,11 +54,11 @@ Para entrar al shell de la base
 
 Para hacer un backup de la base
 -------------------------------
-	mongodump --out ./mongo/ --db prueba   # Si estás parado en la raiz del repo
+	mongodump --out ./mongo/ --db redDeMascotas   # Si estás parado en la raiz del repo
 
 Para restaurar el backup de la base
 -----------------------------------
-	mongorestore prueba/   # Estando parados en la carpeta mongo del repo
+	mongorestore redDeMascotas/   # Estando parados en la carpeta mongo del repo
 	
 
 
