@@ -1,6 +1,7 @@
 package services;
 
 import model.Contrasenia;
+import model.MascotaAdopcion;
 import model.Usuario;
 import model.externo.UsuarioLogIn;
 import model.externo.UsuarioRegistroCuenta;
@@ -9,9 +10,10 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
+import java.util.List;
 
 @Service
-public class LogInServicio {
+public class UsuarioServicio {
 
     private SecureRandom secureRandom = new SecureRandom();
 
@@ -48,6 +50,10 @@ public class LogInServicio {
                                       usuarioRegistro.telefono,
                                       usuarioRegistro.domicilio);
         Usuario.crear(usuario);
+    }
+
+    public List<MascotaAdopcion> traerMascotasEnAdopcion(String usuarioId) {
+        return MascotaAdopcion.traerPorDuenioId(usuarioId);
     }
 
     private Contrasenia crearContrasenia(String contrasenia) {

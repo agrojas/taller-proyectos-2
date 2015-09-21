@@ -31,10 +31,6 @@ public class Usuario {
 
     public Domicilio domicilio;
 
-    public List<String> animalesEnAdopcion;
-
-    public List<String> animalesEncontrados;
-
     // TODO: Parametros de busquedas
 
 
