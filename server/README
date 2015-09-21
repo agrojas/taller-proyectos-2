@@ -98,8 +98,19 @@ URL: http://localhost:9000/usuario
 
 Body:
 {
-"nombre": "Yamila"
+"nombreDeUsuario": "GlinsekY",
+"email": "yamila.glinsek@gmail.com",
+"contrasenia": "password",
+"nombre": "Yamila",
+"apellido": "Glinsek",
+"telefono": "01149576440",
+"domicilio": {
+"calle": "Pavón",
+"numero": "3100",
+"barrio": "San Cristóbal",
+"ciudad": "C.A.B.A",
+"provincia": "C.A.B.A",
+"pais": "Argentina"
 }
-
-
+}
 
